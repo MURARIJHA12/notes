@@ -1,0 +1,374 @@
+                  java script 
+
+
+@ what is java script
+
+  ans- java script is a just like  a programin languaue for web devlopment
+
+.java script is a interpriater language
+
+.there are two types of java script linked to files 
+
+1-internal link in java script
+syntax-
+<script>
+    //internali linked 
+    console.log("hello world");
+</script>
+
+
+ 2-external link in java script
+
+
+syntax-
+<script src="script.js"></script>
+
+
+                       variables in java script
+      
+
+
+
+
+there are three typess of variables in java script
+1-let
+.scope are local
+example-
+let age1=23;
+console.log(age1);
+let a=23;
+let b=34;
+console.log(a+b);
+
+
+2-var
+.scope are global
+example-
+var age=22;
+var num1=10;
+var num2=20;
+console.log(num1+num2);
+console.log(age);
+
+.note-variables name starts in alphabat it is not other words started and space are not allowed
+for example-
+ 1age,#age,ag e are not a var typess data 
+
+
+3-const
+.scope are local
+.constant value if one times assing then not re-assing value
+example-
+const age2=25;
+age2=26;
+console.log(age2);(it is not possible)
+example-
+const age2=25;
+console.log(age2);(it is possible)
+
+      data types in  javascript
+
+.Number 
+.string
+.boolean
+.undefined
+.NULL
+.objects
+
+1-Numbers
+example-
+let num=3;
+let num2=3.5;
+console.log(num+num2);
+
+2-strings
+.string+number-string;
+.string*number-numbers;
+example-
+let firstname="Murari"
+const secondname='kumar'
+var leastname="jha"
+console.log(firstname+' '+secondname+' '+leastname);
+.note-sting are both double cotes(" ") and single cotes(' ')
+.where-''->defined in space
+
+3-Booleans
+.boolean data tyes are retutrn two result true or false
+example-
+let married=true;
+console.log(married);
+let married1=false;
+console.log(married1);
+
+4-NULL-value are null
+example- 
+let leastLoginDate=null;
+console.log(leastLoginDate);
+
+5-undefined
+.value are not defined
+let leastLoginDate1=undefined;
+console.log(leastLoginDate1);
+
+6-Objects
+.it is stored in multiple data
+example-
+
+const person={
+    name:'murari', 
+    age:25,
+    gender:'male',
+    city:'Darbhanga',
+}
+console.log(person);
+
+.if object existed single data then
+syntax- console.log(person.name);
+
+note-, are nessesary
+
+                       operator in javascript
+ 
+// airthmetic operations
+//+,-,*,/,%
+let a=9;
+let b=3;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+
+type of operator
+
+.number-
+console.log(typeof 123);
+
+.string
+console.log(typeof "hello");
+
+.oboject
+
+console.log(typeof person);
+
+
+                 conditional statement in java script
+
+     
+
+1- if-else statement
+example-
+const age=22;
+if(age>=18){
+    console.log("you are elligibale for voting");
+
+}
+else{
+    console.log("you are not elligibal for vopating");
+}
+
+2-ternary operators:
+.ternary operator appling only for one condition
+const age1=17;
+age1>=18? console.log("you are elligibal for voting"):console.log("you are not elligibal for voting");
+3-switch case statement
+example-
+const option=8;
+
+switch(option){
+
+    case 1:{
+        console.log("hello kasai hai aap");
+        break;
+    }
+    case 2:{
+        console.log("Namaste!");
+        break;
+    }
+    case 3:{
+        console.log("hello");
+         break;
+    }
+   default:
+    {
+        console.log("invalid option");
+    }
+}
+
+examples-2:
+
+let a=30;
+let b=5;
+const opt='+'
+switch(opt){
+    case '+':{
+        console.log(a+b);
+        break;
+    }
+    case '-':{
+        console.log(a-b);
+        break;
+    }
+    case '*':{
+        console.log(a*b);
+        break;
+    }
+    case '/':{
+        console.log(a/b);
+        break;
+    }
+    case '%':{
+        console.log(a%b);
+        break;
+    }
+    default:{
+        console.log("invalid operation");
+    }
+}
+
+
+                  logical operators
+
+.there are three types of logical operators
+1 AND
+2 OR
+3 NOT
+
+.AND
+-all condition are satisfied then result are true
+-if  any one condition are false then result are faluse
+-it is denoted by && 
+example-
+const age=20;
+const gen='male';
+if(age>=18&&gen==='male'){
+    console.log('you are adult male');
+}
+
+output-you are adult male
+
+example-
+const age=10;
+const gen='male';
+if(age>=18&&gen==='male'){
+    console.log('you are adult male');
+}
+output-
+
+
+.OR
+-if at least one result are true then result are true
+-it is denoted by||
+example-
+const age2=20;
+const gen2='male';
+if(age2>=18||gen2==='male'){
+    console.log('you are adult male');
+}
+
+output-you are adult male
+
+const age3=10;
+const gen3='male';
+if(age3>=18||gen3!='male'){
+    console.log('you are adult male');
+}
+
+result-
+
+.NOT
+-if true<->false
+example-
+const no=10;
+if(no%2==0){
+    console.log('even');
+}
+
+output-odd;
+
+
+                            loops
+
+
+.if any same works prforms n-times then used in loops
+.there are many different types of loops in used javascript
+
+1:for-loops
+example-
+for(let i=1;i<=10;i++){
+    console.log('murari'+i);
+}
+output- murari1 to murari10;
+
+2:while-loops
+example-
+let ip=0;
+let house=100;
+while(ip!=house){
+    ip=ip+1;
+    console.log('step taken'+ip);
+}
+output-step taken1 to step tahen100
+
+3:DO while-loops
+ eexample-
+
+ip1=0;
+house1=100;
+do{
+    ip1=ip1+1;
+    console.log('step taken'+ip1);
+}while(ip1!=house);
+
+output-step taken1 to step tahen100
+
+
+                                   function in java script
+
+
+//functions 
+
+function  murari(){
+    console.log("hello my name is murari");
+}
+
+//calling of function
+murari();
+
+//sum of two number throught function
+
+function add(a,b){       //a and b are parameters
+    console.log(a+b);
+}
+//call of function
+add(10,20);
+add(30,30);
+
+
+//product of two number throught function
+
+function  mult(c,d){
+    // console.log(c*d);
+    return c*d;
+}
+let c=mult(30,30)
+console.log('result will be',c);
+
+
+//sum of infinite number throught function
+
+//unlimted argumments accept
+function addNumbers(){
+    let ans=0
+    for(let i=0;i<arguments.length;i++){
+        ans=ans+arguments[i]
+    }
+    console.log( 'sum is ',ans)
+}
+addNumbers(10,20,30,40,50,60,70,80,90);
+
+//2nd method spread operators
+function addNumbersv2(...murari){
+    let ans=0
+    for(let i=0;i<murari.length;i++){
+        ans=ans+murari[i]
